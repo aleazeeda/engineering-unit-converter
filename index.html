@@ -18,28 +18,39 @@
     <button onclick="goPage4()">② Show Frequent Used Units</button>
   </div>
 
-  <!-- PAGE 3: CONVERTER -->
-  <div id="page3" class="page hidden">
-    <label>Enter number:</label><br>
-    <input type="number" id="value"><br><br>
+<!-- PAGE 3: CONVERTER -->
+<div id="page3" class="page hidden">
+  <label>Enter number:</label><br>
+  <input type="number" id="value"><br><br>
 
-    <label>Choose unit:</label><br>
-    <select id="conversion">
-      <option value="cm-km">cm → km</option>
-      <option value="km-m">km → m</option>
-      <option value="c-k">°C → K</option>
-      <option value="cm-mm">cm → mm</option>
-      <option value="m-cm">m → cm</option>
-    </select><br><br>
+  <label>Original unit:</label><br>
+  <select id="fromUnit">
+    <option value="cm">cm</option>
+    <option value="m">m</option>
+    <option value="km">km</option>
+    <option value="mm">mm</option>
+    <option value="c">°C</option>
+    <option value="k">K</option>
+  </select><br><br>
 
-    <button onclick="convert()">Convert</button>
+  <label>Convert to:</label><br>
+  <select id="toUnit">
+    <option value="cm">cm</option>
+    <option value="m">m</option>
+    <option value="km">km</option>
+    <option value="mm">mm</option>
+    <option value="c">°C</option>
+    <option value="k">K</option>
+  </select><br><br>
 
-    <p>Result:</p>
-    <p id="result"></p>
+  <button onclick="convert()">Convert</button>
 
-    <button onclick="goPage2()">Back</button>
-    <button onclick="goEnd()">End</button>
-  </div>
+  <p>Result:</p>
+  <p id="result"></p>
+
+  <button onclick="goPage2()">Back</button>
+  <button onclick="goEnd()">End</button>
+</div>
 
   <!-- PAGE 4: FREQUENT USED -->
   <div id="page4" class="page hidden">
