@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Engineering Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Engineering Unit Converter</h1>
-  <p>This is my first web app.</p>
+  <!-- FRONT PAGE -->
+  <div id="frontPage" class="page">
+    <h1>Engineering Unit Converter</h1>
+    <button onclick="goToMenu()">Start</button>
+  </div>
 
+  <!-- MENU PAGE -->
+  <div id="menuPage" class="page hidden">
+    <h2>Choose Option</h2>
+    <button onclick="goToConverter()">① Enter Number</button><br><br>
+    <button onclick="showFrequent()">② Show Frequent Used Unit</button><br><br>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <!-- FREQUENT USED PAGE -->
+  <div id="frequentPage" class="page hidden">
+    <h2>Frequent Used Unit Converter</h2>
+    <ul>
+      <li>cm → metre</li>
+      <li>km → metre</li>
+      <li>cm → km</li>
+    </ul>
+    <button onclick="goToMenu()">Back</button>
+  </div>
+
+  <!-- CONVERTER PAGE -->
+  <div id="converterPage" class="page hidden">
+    <h2>Unit Converter</h2>
+
+    <label>Enter number:</label><br>
+    <input type="number" id="value"><br><br>
+
+    <label>Choose unit to convert:</label><br>
+    <select id="unit">
+      <option value="cm-m">cm → metre</option>
+      <option value="km-m">km → metre</option>
+      <option value="cm-km">cm → km</option>
+    </select><br><br>
+
+    <button onclick="convert()">Convert</button>
+
+    <p>Result:</p>
+    <p id="result"></p>
+
+    <button onclick="goToConverter()">Again</button>
+    <button onclick="goToMenu()">Back</button>
+    <button onclick="goToEnd()">End</button>
+  </div>
+
+  <!-- END PAGE -->
+  <div id="endPage" class="page hidden">
+    <h2>Thank you for using our unit converter!</h2>
+    <button onclick="restart()">Start Again</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
