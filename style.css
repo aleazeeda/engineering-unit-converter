@@ -1,11 +1,17 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
   text-align: center;
   margin-top: 100px;
 }
 
 .page {
+  background-color: white;
+  width: 350px;
   margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .hidden {
@@ -15,4 +21,10 @@ body {
 button {
   padding: 10px 20px;
   font-size: 16px;
+  cursor: pointer;
+}
+
+input, select {
+  padding: 5px;
+  font-size: 14px;
 }
