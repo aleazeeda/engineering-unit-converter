@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Engineering Unit Converter</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,64 +15,76 @@
 
   <!-- PAGE 2: MENU -->
   <div id="page2" class="page hidden">
+    <h2>Menu</h2>
     <button onclick="goPage3()">① Enter Number</button><br><br>
     <button onclick="goPage4()">② Show Frequent Used Units</button>
   </div>
 
-<!-- PAGE 3: CONVERTER -->
-<div id="page3" class="page hidden">
-  <label>Enter number:</label><br>
-  <input type="number" id="value"><br><br>
+  <!-- PAGE 3: CONVERTER -->
+  <div id="page3" class="page hidden">
+    <h2>Unit Converter</h2>
 
-  <label>Original unit:</label><br>
-  <select id="fromUnit">
-    <option value="cm">cm</option>
-    <option value="m">m</option>
-    <option value="km">km</option>
-    <option value="mm">mm</option>
-    <option value="c">°C</option>
-    <option value="k">K</option>
-  </select><br><br>
+    <label>Enter value:</label><br>
+    <input type="number" id="value"><br><br>
 
-  <label>Convert to:</label><br>
-  <select id="toUnit">
-    <option value="cm">cm</option>
-    <option value="m">m</option>
-    <option value="km">km</option>
-    <option value="mm">mm</option>
-    <option value="c">°C</option>
-    <option value="k">K</option>
-  </select><br><br>
+    <label>Original unit:</label><br>
+    <select id="fromUnit">
+      <option value="cm">cm</option>
+      <option value="m">m</option>
+      <option value="km">km</option>
+      <option value="mm">mm</option>
 
-  <button onclick="convert()">Convert</button>
+      <option value="kg">kg</option>
+      <option value="g">g</option>
 
-  <p>Result:</p>
-  <p id="result"></p>
+      <option value="n">Newton (N)</option>
+      <option value="j">Joule (J)</option>
 
-  <button onclick="goPage2()">Back</button>
-  <button onclick="goEnd()">End</button>
-</div>
+      <option value="c">°C</option>
+      <option value="k">Kelvin (K)</option>
+    </select><br><br>
+
+    <label>Convert to:</label><br>
+    <select id="toUnit">
+      <option value="cm">cm</option>
+      <option value="m">m</option>
+      <option value="km">km</option>
+      <option value="mm">mm</option>
+
+      <option value="kg">kg</option>
+      <option value="g">g</option>
+
+      <option value="n">Newton (N)</option>
+      <option value="j">Joule (J)</option>
+
+      <option value="c">°C</option>
+      <option value="k">Kelvin (K)</option>
+    </select><br><br>
+
+    <button onclick="convert()">Convert</button>
+
+    <p><strong>Result:</strong></p>
+    <p id="result"></p>
+
+    <button onclick="goPage2()">Back</button>
+    <button onclick="goEnd()">End</button>
+  </div>
 
   <!-- PAGE 4: FREQUENT USED -->
   <div id="page4" class="page hidden">
-    <h3>Frequent Used Units</h3>
-    <ol>
-      <li>cm → km</li>
-      <li>km → m</li>
-      <li>°C → K</li>
-      <li>cm → mm</li>
-      <li>m → cm</li>
-    </ol>
+    <h2>Frequent Used Units</h2>
+    <ol id="frequentList"></ol>
+
+    <button onclick="resetFrequent()">Reset History</button><br><br>
     <button onclick="goPage2()">Back</button>
   </div>
 
   <!-- PAGE 5: END -->
   <div id="page5" class="page hidden">
     <h2>Thank you for using our converter!</h2>
-    <button onclick="goPage1()">Back</button>
+    <button onclick="goPage1()">Back to Start</button>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
