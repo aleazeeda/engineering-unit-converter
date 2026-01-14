@@ -2,6 +2,17 @@
 
 BMKT 1723 – Computer Programming (Group Assignment)
 
+👥 Group Members
+
+1. Alea Syajjidah binti Camillus
+
+2. Muhd Aiman Farhan bin Roslan
+
+3. Amir Irsyad Rifai bin Azmil
+
+4. Luqman Hafiz bin Abd Aziz
+
+
 
 📌 Project Overview
 
@@ -60,14 +71,19 @@ All concepts are directly related to C++ fundamentals.
 🗂️ Project Structure
 
 engineering-unit-converter
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 └── README.md
+
 
 🌐 Live Website
 
-👉 (Insert GitHub Pages link here)
+👉 https://aleazeeda.github.io/engineering-unit-converter/
 
 🧪 How to Use the Application
 
@@ -132,3 +148,6 @@ AI tools were used to:
 
 - Ensured code aligns with C++ programming concepts
 
+✅ Conclusion
+
+This project successfully applies core C++ programming concepts in a practical web application, demonstrating problem-solving skills, data handling, and user interaction.
